@@ -1,0 +1,202 @@
+[
+  {
+    "_id": "666a02ea8d4e075eb4d01fb8",
+    "title": "Creating an E-commerce Site with MERN Stack — Part I",
+    "author": {
+      "_id": "6669e3302dc79bc7dd64cef6",
+      "name": "Admin"
+    },
+    "content": [
+      {
+        "heading": "Introduction",
+        "image": "/uploads/image-1718222143510..jpg",
+        "paragraph": "MERN stack is a popular web development technology stack used for building scalable and efficient web applications. It consists of four key technologies: MongoDB, Express.js, React, and Node.js.\n<ul>\n  <li ><span style=\"font-weight: bold;\">Mongo DB </span>is a document-based database, which means that data is stored in flexible JSON-like documents instead of tables with rows and columns. (https://www.mongodb.com/)\n</li>\n  <li ><span style=\"font-weight: bold;\">Express.js </span>is a flexible and lightweight backend web application framework built on top of Node.js (https://expressjs.com/)\n</li>\n\n<li ><span style=\"font-weight: bold;\">React.js  </span>is a powerful frontend JavaScript library for building user interfaces also React’s reusable components make it easier to develop complex user interfaces and enable faster rendering of dynamic content. (https://legacy.reactjs.org/)\n</li><li ><span style=\"font-weight: bold;\">Node.js  </span>Node.js is a JavaScript runtime that allows us to run JavaScript on the server-side. (https://nodejs.org/en\n\n</li>\n</ul>",
+        "_id": "666a02ea8d4e075eb4d01fb9"
+      },
+      {
+        "heading": "Setting up the environments",
+        "image": "",
+        "paragraph": "<span style=\"font-weight: bold;\">Step 1: Installing Node.js and React</span>\n<br/>\nTo get started with building, first, we need to install Node.js (if we have not already installed it) and React. For the installation, we use the Node Package Manager (npm) by running the following commands:\n<br/>\nnpm install -g node<br/>\nnpx create-react-app <your-app-name><br/>\nThe first command installs Node.js globally on our system. The second command creates a new React project.\n<br/>\n<span style=\"font-weight: bold;\">Step 2: Setting up the Server-Side Application (Backend)</span>\n<br/>\nFirst, create a folder for the backend part, and inside the folder, we can easily create an npm project using the following command:\n<br/>\nnpm init -y<br/>\nAfter we ran the command in our backend folder, it already created the package.json file:\n<br/>\nHere, we can change the project name, decide on a specific version, and add a project description. Initially, our main file is called index.js. So, go to the project folder and create an empty index.js file. After we initialize the package.json file, we can easily install different packages for the project.\n<br/>\nThe first package we need to install is Express.js. Express is a popular Node.js framework for building server-side applications. Run the following command inside the backend folder:\n<br/>\nThis command installs the Express package and saves it as a dependency in our project’s package.json file.\n<br/>\n<span style=\"font-weight: bold;\">Index.js</span>\n<br/>\nAdd the following code to the index.js file:\n\n<div style=\"background-color: lightblue; border: 1px solid blue; padding: 10px; border-radius: 5px; font-family: monospace; white-space: pre-wrap;\">\n  const express = require('express');<br/>\n  const app = express();<br/>\n  const port = 5000;<br/>\n\n  app.get('/', (req, res) => {<br/>\n    res.send('Hello World!');<br/>\n  });<br/>\n  <br/>\n  app.listen(port, () => {<br/>\n    console.log(`Server running on port ${port}`);<br/>\n  });<br/>\n</div>\n\nThis code sets up a simple Express server that listens on port 5000 and responds with “Hello World!” when we access the root URL. Go to your browser and check it yourself (http://localhost:5000/).\n<br/>\n<span style=\"font-weight: bold;\">Step 3: Installing MongoDB and Mongoose</span>\n<br/>\nFinally, we need to install MongoDB and Mongoose to connect to the database. You can download it from the official site ( https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/) and install it. MongoDB Compass helps us manage our databases. Mongoose is an Object-Document Mapping (ODM) library for MongoDB that provides a schema-based solution to model our data.\n<br/>\nnpm install --save mongoose<br/>\nThis command installs the Mongoose packages and saves them as dependencies in our project’s package.json file\n",
+        "_id": "666a02ea8d4e075eb4d01fba"
+      },
+      {
+        "heading": "Conclusion",
+        "image": "",
+        "paragraph": "To sum up, this article has demonstrated the process of setting up an environment for building an e-commerce website with the MERN Stack. After following the steps, the necessary folders for the frontend and backend parts are created, and we have successfully installed Node.js, React, Express, MongoDB, and Mongoose. With this foundation in place, we are now equipped to begin building our e-commerce website. I hope that these instructions have been helpful in getting your project started, and I encourage you to check out part II of this series, where we dive into the actual building process.",
+        "_id": "666afab0d7b864b684016397"
+      }
+    ],
+    "comments": [],
+    "createdAt": "2024-06-12T20:19:54.340Z",
+    "updatedAt": "2024-06-13T15:22:48.385Z",
+    "__v": 17
+  },
+  {
+    "_id": "666b10e06859696128169da4",
+    "title": "What Is The MERN Stack? Introduction & Resources",
+    "author": {
+      "_id": "6669e3302dc79bc7dd64cef7",
+      "name": "John Doe"
+    },
+    "content": [
+      {
+        "heading": "This introduction/guide will clear all your doubts about the MERN stack and provide you with resources to learn it.",
+        "image": "/uploads/image-1752686222058..png",
+        "paragraph": "",
+        "_id": "666b10e06859696128169da5"
+      },
+      {
+        "heading": "Introduction ",
+        "image": "",
+        "paragraph": "If you are in the field of web development you probably have heard the name ‘Mern’ stack. It’s a trending stack used in many projects and companies to build products. <br/> In this article, let’s understand what the MERN stack is and what the different technologies are used for which tasks. I’ll also provide you with resources to learn MERN stack development.",
+        "_id": "666b10e06859696128169da6"
+      },
+      {
+        "heading": "What is the MERN stack?",
+        "image": "",
+        "paragraph": "The MERN stack combines four powerful technologies: MongoDB, Express.js, React, and Node.js.\n\nEach component of the stack is responsible for a specific aspect of web development, and when used together, they create a cohesive environment for building full-stack web applications.\nLet’s take a closer look at each of these technologies:<br/><ul>\n  <li ><span style=\"font-weight: bold;\">Mongo DB </span>is a document-based database, which means that data is stored in flexible JSON-like documents instead of tables with rows and columns. (https://www.mongodb.com/)\n</li>\n  <li ><span style=\"font-weight: bold;\">Express.js </span>is a flexible and lightweight backend web application framework built on top of Node.js (https://expressjs.com/)\n</li>\n\n<li ><span style=\"font-weight: bold;\">React.js  </span>is a powerful frontend JavaScript library for building user interfaces also React’s reusable components make it easier to develop complex user interfaces and enable faster rendering of dynamic content. (https://legacy.reactjs.org/)\n</li><li ><span style=\"font-weight: bold;\">Node.js  </span>Node.js is a JavaScript runtime that allows us to run JavaScript on the server-side. (https://nodejs.org/en\n\n</li>\n</ul>",
+        "_id": "666b10e06859696128169da7"
+      },
+      {
+        "heading": "How the MERN stack works",
+        "image": "",
+        "paragraph": "The MERN stack follows a clear separation between the front end and the back end, allowing developers to work on both sides independently while ensuring smooth communication between them.\n<br/>\nHere’s how all the components of the MERN stack work:<br/>\n\nThe frontend is built using React.js, It handles all the client-side logic and makes the web app interactive. It sends HTTP requests to the backend for data retrieval, addition, and manipulation.\n<br/>\n<span style=\"font-weight: bold;\">Express.js</span>, running on Node.js, serves as the backend. It handles the incoming HTTP requests from the front end, communicates with the MongoDB database to retrieve or store data, and sends back appropriate responses.\n<br/>\n<span style=\"font-weight: bold;\">MongoDB </span>stores the application’s data. It provides a flexible and scalable database solution that stores data in collections (equivalent to tables in relational databases) and documents (equivalent to rows).\n<br/>\n<span style=\"font-weight: bold;\">Node.js </span>acts as the intermediary between the front end and the MongoDB database. It receives requests from the front end, processes them, interacts with the database, and sends back the necessary data.\n<br/>\n",
+        "_id": "666b10e06859696128169da8"
+      },
+      {
+        "heading": "Benefits of using the MERN stack",
+        "image": "",
+        "paragraph": "<span style=\"font-weight: bold;\">Full-Stack JavaScript: </span>MERN stack allows developers to use a single programming language for the entire application. Whether it be frontend or backend. Giving JavaScript developers a superpower.\n<br/>\n<span style=\"font-weight: bold;\">Reusability: </span>With the component-based architecture of React, developers practice one of the most important principles of development which is DRY (Do not repeat yourself). With React developers can create reusable UI elements, reducing repetition and saving time.\n<br/>\n<span style=\"font-weight: bold;\">Real-time applications:</span> Node.js’s event-driven architecture enables the creation of real-time applications, such as chat applications and collaborative tools. You can use libraries like ‘socket.io’ for achieving that.\n<br/>\n<span style=\"font-weight: bold;\">Scalability:</span> MongoDB’s ability to handle large amounts of data and Node.js’s non-blocking I/O make the stack suitable for building scalable applications.\n<br/>\n",
+        "_id": "666b10e06859696128169da9"
+      },
+      {
+        "heading": "Conclusion",
+        "image": "",
+        "paragraph": "In conclusion, the MERN stack is a powerful combination of MongoDB, Express.js, React, and Node.js that enables developers to build modern, efficient, and scalable web applications.\n<br/>\nSo, roll up your sleeves and embark on your journey into the exciting world of web development with the MERN stack!\n<br/>\nI’m Pushkaraj Kulkarni, a full-stack developer and freelancer. I specialize in building high-quality and scalable web apps. Currently, I am available for freelance or part-time job opportunities.\n<br/>\nIf you enjoyed this article, please give it a clap, and consider following me on Medium. You can also find me on X (Twitter), where I am quite active.\n<br/>\nIf you have any queries related to this article or any suggestions, please feel free to leave them in the comments section. I will respond to all of you. Alternatively, you can also send me a DM on X (Twitter).\n<br/>\n",
+        "_id": "666b11556859696128169df1"
+      }
+    ],
+    "comments": [],
+    "createdAt": "2024-06-13T15:31:44.706Z",
+    "updatedAt": "2025-07-16T17:17:08.839Z",
+    "__v": 3
+  },
+  {
+    "_id": "666b130310dd39a05b649795",
+    "title": "Linux, Apache,MySQL,PHP stack implementation in AWS",
+    "author": {
+      "_id": "6669e3302dc79bc7dd64cef6",
+      "name": "Admin"
+    },
+    "content": [
+      {
+        "heading": "",
+        "image": "/uploads/image-1718293177819..jpg",
+        "paragraph": "",
+        "_id": "666b130310dd39a05b649796"
+      },
+      {
+        "heading": "We will follow below steps :",
+        "image": "",
+        "paragraph": "<ul>\n  <li >\nWe will create linux EC2 instance in AWS</li> <li >\nWe will install Apache, MySQL and PHP in linux (Ubuntu) OS</li> <li >\nWe will open port 80 to access web page from outside using EC2 instance public IP address.\n</li>\n</ul>",
+        "_id": "666b130310dd39a05b649797"
+      },
+      {
+        "heading": "We will create linux EC2 instance in AWS :",
+        "image": "",
+        "paragraph": "1.We will create Ubuntu linux EC2 instance and give name tag as web-LAMP",
+        "_id": "666b156180ead53475f9e5d6"
+      },
+      {
+        "heading": "",
+        "image": "/uploads/image-1718293854843..jpg",
+        "paragraph": "2. We will open port 80 to access web page from outside, using EC2 instance’s public ip address",
+        "_id": "666b156180ead53475f9e5d7"
+      },
+      {
+        "heading": "",
+        "image": "/uploads/image-1718293906878..jpg",
+        "paragraph": "",
+        "_id": "666b15d780ead53475f9e615"
+      },
+      {
+        "heading": "Installing Apache in OS",
+        "image": "",
+        "paragraph": "Apache HTTP Server is the most widely used web server software. Developed and maintained by Apache Software Foundation, Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure.<br/>\n<li>update a list of packages in package manager</li>\n#sudo apt update\n\n<li>run apache2 package installation</li>\n#sudo apt install apache2\n\n<li>Check the status</li>\n#sudo systemctl status apache2",
+        "_id": "666b15d780ead53475f9e616"
+      },
+      {
+        "heading": "",
+        "image": "/uploads/image-1718294226284..jpg",
+        "paragraph": "We can access page from internet browser with public IP address of EC2 instance on port 80",
+        "_id": "666b173b80ead53475f9e6e8"
+      },
+      {
+        "heading": "",
+        "image": "/uploads/image-1718294231589..jpg",
+        "paragraph": "",
+        "_id": "666b173b80ead53475f9e6e9"
+      },
+      {
+        "heading": "Installing MySQL in OS",
+        "image": "",
+        "paragraph": "Now that we have a web server up and running, we need to install a Database Management System (DBMS) to be able to store and manage data for our site in a relational database. MySQL is a popular relational database management system used within PHP environments<br/>#sudo apt install mysql-server\n<br/>\n#sudo mysql",
+        "_id": "666b173b80ead53475f9e6ea"
+      },
+      {
+        "heading": "Enable PHP on the website",
+        "image": "",
+        "paragraph": "\nWith the default DirectoryIndex settings on Apache, a file named index.html will always take precedence over an index.php file. This is useful for setting up maintenance pages in PHP applications, by creating a temporary index.html file containing an informative message to visitors. Because this page will take precedence over the index.php page, it will then become the landing page for the application. Once maintenance is over, the index.html is renamed or removed from the document root, bringing back the regular application page.",
+        "_id": "666b173b80ead53475f9e6eb"
+      }
+    ],
+    "comments": [],
+    "createdAt": "2024-06-13T15:40:51.819Z",
+    "updatedAt": "2024-06-13T15:58:51.285Z",
+    "__v": 7
+  },
+  {
+    "_id": "666b1a25941f5b4c9e0dd17d",
+    "title": "Mastering the .NET Full Stack: A Comprehensive Guide",
+    "author": {
+      "_id": "6669e3302dc79bc7dd64cef8",
+      "name": "Jane Doe"
+    },
+    "content": [
+      {
+        "heading": "1. Introduction",
+        "image": "/uploads/image-1718294877079..jpg",
+        "paragraph": "",
+        "_id": "666b1a25941f5b4c9e0dd17e"
+      },
+      {
+        "heading": "",
+        "image": "",
+        "paragraph": ".NET Full Stack refers to the combination of tools and technologies used to build applications in the .NET ecosystem that span both client-side and server-side development. Here’s a brief overview:",
+        "_id": "666b1a25941f5b4c9e0dd17f"
+      },
+      {
+        "heading": "Server-Side (Backend)",
+        "image": "",
+        "paragraph": "<ul>\n <li >.NET Framework/.NET Core/.NET 5+: This is the runtime and set of libraries that allow developers to build and run .NET applications. .NET Core and .NET 5+ are cross-platform, supporting Windows, Linux, and macOS.\n</li> <li >C# Language: The primary programming language for .NET development, known for its object-oriented features and type safety.\n</li> <li >ASP.NET/ASP.NET Core: Frameworks for building web applications, including web APIs. They provide functionality for request handling, routing, authentication, and much more.\n</li> <li >Entity Framework: An Object-Relational Mapper (ORM) that allows developers to work with databases using .NET objects, eliminating the need for most data-access code.\n</li> <li >MVC Pattern: Stands for Model-View-Controller, a design pattern often used in web development for separating concerns within the application.\n</li>\n</ul>",
+        "_id": "666b1a25941f5b4c9e0dd180"
+      },
+      {
+        "heading": "Client-Side (Frontend)",
+        "image": "",
+        "paragraph": "<ul>\n  <li >Blazor: A framework that allows developers to build interactive web UIs using C# instead of JavaScript.\n</li> <li >Razor Pages: A page-based programming model that simplifies the building of web UIs in ASP.NET Core.\n</li> <li >.Web Forms: An older model for building dynamic websites in .NET Framework with a drag-and-drop visual designer (being phased out in favor of more modern approaches).\n</li>\n</ul>",
+        "_id": "666b1a25941f5b4c9e0dd181"
+      },
+      {
+        "heading": "Full Stack Tools and Environments",
+        "image": "",
+        "paragraph": "<ul>\n   <li >Visual Studio: An integrated development environment (IDE) from Microsoft for developing, debugging, and publishing .NET applications.\n</li> <li >Visual Studio Code: A lightweight, cross-platform editor that supports .NET development with extensions.\n</li> <li >SQL Server: A relational database management system frequently used in .NET applications for data storage.\n</li> <li >Azure DevOps: A suite of development tools for version control, CI/CD, project management, and more.\n</li> <li >NuGet: A package manager for .NET that allows developers to share and use code from others.\n</li>\n</ul>",
+        "_id": "666b1a25941f5b4c9e0dd182"
+      }
+    ],
+    "comments": [],
+    "createdAt": "2024-06-13T16:11:17.554Z",
+    "updatedAt": "2024-06-13T16:12:37.185Z",
+    "__v": 1
+  }
+]
